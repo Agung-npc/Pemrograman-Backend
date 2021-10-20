@@ -44,7 +44,7 @@
   public function destroy($index)
   {
   # gunakan method unset atau array_splice untuk menghapus data array
-  array_splice($this->animals, $index, 1);
+  array_splice($this->animals, $index, 2);
     
     }
   }

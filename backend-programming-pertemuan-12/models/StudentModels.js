@@ -25,9 +25,9 @@ static async create(data) {
     const insert = await new Promise((resolve, reject) => {
     const sql = "INSERT INTO students SET ?";
       db.query(sql, data, (error, results) => {
-        if (error) {
-        reject(error);
-        }
+       if (error) {
+       reject(error);
+ }
         resolve(results.insertID);
       });
     });

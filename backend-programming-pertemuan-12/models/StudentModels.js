@@ -8,7 +8,7 @@ class Student {
     return new Promise((resolve, reject) => {
     /* Membuat query ke database */
     const sql = "SELECT * FROM students";
-    db.query(sql, function(erroror, results){
+    db.query(sql, function(error, results){
       resolve(results);
      });
     });
